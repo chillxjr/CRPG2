@@ -249,7 +249,10 @@ def menu():
 	    system.quit()
 	
 	if select == "go":
-	    os.system('python3 adventure.py')
+		print('You gather your things, and walk out the door.')
+		time.sleep(3)
+		os.system('python3 adventure.py ' + charfilefinal)
+		time.sleep(3)
 	
 	if select == "add":
 	    itemchoice = input('please name the item: ')
